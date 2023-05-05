@@ -5,7 +5,7 @@ import VueDatePicker from '@vuepic/vue-datepicker'
 import '@vuepic/vue-datepicker/dist/main.css'
 
 // modelValue
-const date = ref(new Date())
+const date = ref('2023/05/05 05:55:00')
 
 </script>
 
@@ -16,7 +16,8 @@ const date = ref(new Date())
     </div>
 
     <div>
-      <VueDatePicker v-model="date" locale="ja" format="yyyy/MM/dd HH:mm:ss" enable-seconds />
+      <VueDatePicker v-model="date" model-type="yyyy/MM/dd HH:mm:ss" locale="ja" format="yyyy/MM/dd HH:mm:ss"
+        enable-seconds />
     </div>
     <div>
       {{ date }}<br />
